@@ -51,6 +51,22 @@ App.jsx（状態管理）
 }
 ```
 
+## テスト
+
+Selenium + PythonによるE2Eテスト（10ケース）
+
+- ページ表示確認
+- バリデーション（空欄・0以下）
+- 記録・平均計算・クラブ切り替え
+- 履歴の開閉
+- 1件削除・まとめて削除
+- リロード後のデータ永続化
+
+```bash
+pip install selenium
+python test_club_distance.py
+```
+
 ## 今後の予定
 
 - Node.js + Express + データベースによるバックエンド実装
