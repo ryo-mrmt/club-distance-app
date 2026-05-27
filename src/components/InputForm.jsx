@@ -3,7 +3,7 @@ import { clubs } from '../data/clubs.js'
 
 
 
-function InputForm({ onSave, selectedClub, onClubChange  }) {
+function InputForm({ onSave, selectedClub, onClubChange, records  }) {
 
     const [distance, setDistance] = useState('')
     const handleSave = () => {
@@ -19,7 +19,6 @@ function InputForm({ onSave, selectedClub, onClubChange  }) {
             return false;
         }
     
-        const records = JSON.parse(localStorage.getItem('records') || '[]')
         const clubRecords = records.filter((r) => r.club === selectedClub)
         const strokeNumber = clubRecords.length + 1
 

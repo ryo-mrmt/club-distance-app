@@ -28,6 +28,7 @@ function App() {
         onSave={(newRecords) => setRecords(newRecords)} 
         selectedClub={selectedClub} 
         onClubChange={(club) => {setSelectedClub(club)}} 
+        records={records}
       />
       <ClubList 
         records={records} 
