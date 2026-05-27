@@ -10,13 +10,13 @@ function InputForm({ onSave, selectedClub, onClubChange, records  }) {
         
         if(distance === ''){
             alert ("数値を入力してください")
-            return false;
+            return
         } else if(isNaN(distance)) {
             alert ("数値を入力してください")
-            return false;
+            return
         } else if(Number(distance) <= 0) {
             alert ("ミスショットは打ち直してください")
-            return false;
+            return
         }
     
         const clubRecords = records.filter((r) => r.club === selectedClub)
@@ -29,15 +29,12 @@ function InputForm({ onSave, selectedClub, onClubChange, records  }) {
             strokeNumber: strokeNumber,
             day: new Date().toISOString().slice(0, 10)
         }
-
-        localStorage.setItem('records', JSON.stringify([...records, newRecord]))
-
-        setDistance('')
-
-        onSave([...records, newRecord])
-
-        return true;
         
+        const updated = [...records, newRecord]
+        localStorage.setItem('records', JSON.stringify(updated))
+        setDistance('')
+        onSave(updated)
+    
     }
 
     const handleClubChange = (e) => {
