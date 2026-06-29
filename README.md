@@ -25,7 +25,7 @@
 ## セットアップ
 
 ```bash
-git clone https://github.com/nuralilock0621-cyber/club-distance-app.git
+git clone https://github.com/ryo-mrmt/club-distance-app.git
 cd club-distance-app
 npm install
 npm run dev
