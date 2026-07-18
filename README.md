@@ -1,6 +1,6 @@
 # クラブ飛距離メモ
-
 番手別に飛距離を記録、直近3球の平均、番手間の距離差を確認するためのアプリ。
+趣味のゴルフで番手ごとの正確な飛距離を把握するために個人開発。
 
 ## 使用技術
 
@@ -25,7 +25,7 @@
 ## セットアップ
 
 ```bash
-git clone https://github.com/nuralilock0621-cyber/club-distance-app.git
+git clone https://github.com/ryo-mrmt/club-distance-app.git
 cd club-distance-app
 npm install
 npm run dev
