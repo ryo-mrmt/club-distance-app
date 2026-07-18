@@ -67,6 +67,24 @@ pip install selenium
 python test_club_distance.py
 ```
 
+## スクリーンショット
+
+### 参考イメージ１
+
+![参考イメージ１](./screenshots/top.png)
+
+### 参考イメージ2
+
+![参考イメージ2](./screenshots/sub.png)
+
+### 履歴表示
+
+![履歴表示](./screenshots/history.png)
+
+### 入力イメージ
+
+![入力イメージ](./screenshots/input.png)
+
 ## 今後の予定
 
 - Node.js + Express + データベースによるバックエンド実装
